@@ -126,7 +126,7 @@ OPENAI_API_KEY=sk-your-api-key-here
 OPENAI_PROJECT_ID=proj-your-project-id-here
 
 # Server Configuration
-PORT=4000
+PORT=4800
 NODE_ENV=development
 
 # Video Generation (Choose ONE)

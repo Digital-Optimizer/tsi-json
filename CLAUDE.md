@@ -17,7 +17,7 @@ npm run check        # Show startup help and options
 
 ### Development
 ```bash
-npm run dev         # Build client and start server (port 4000)
+npm run dev         # Build client and start server (port 4800)
 npm run dev:watch   # Server with client hot reload (uses concurrently)
 npm run server      # Start server only with nodemon
 npm run watch:client # Watch and rebuild client on changes
@@ -44,7 +44,7 @@ npm run install-all  # Install dependencies for both server and client
 ## Architecture
 
 ### Backend (Express - ES Modules)
-- **server.js**: Main Express server (port 4000, defaults from PORT env)
+- **server.js**: Main Express server (port 4800, defaults from PORT env)
   - Serves API routes and React build
   - Includes request logging, error handling, and health check endpoint
   - Rate limiting on API endpoints (10 requests/minute)
@@ -133,7 +133,7 @@ FAL_AI_API_KEY=...                # Option C: FalAI Veo3 (fast, actual videos)
 KIEAI_API_KEY=...                 # Option D: Kie.ai (cheapest, actual videos)
 
 # Optional
-PORT=4000                          # Server port (default 4000)
+PORT=4800                          # Server port (default 4800)
 NODE_ENV=development              # Environment mode
 ```
 
@@ -273,7 +273,7 @@ Base requirements for all formats:
 
 ### Code Style & Practices
 - Uses ES Modules (`"type": "module"` in package.json)
-- Express server runs on port 4000 by default (configurable via PORT env var)
+- Express server runs on port 4800 by default (configurable via PORT env var)
 - No test framework configured - use manual testing via development server
 - All API endpoints have rate limiting (10 requests/minute per IP)
 - Request logging enabled with unique request IDs for debugging
